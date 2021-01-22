@@ -49,18 +49,18 @@ function hotelCost(numberOfDays) {
     }
     else if (numberOfDays <= 20) {
         numberOfDays = Math.round(numberOfDays);
-        var firstPart = 10 * 100;
+        var firstTenDays = 10 * 100;
         var remaining = numberOfDays - 10;
-        var secondPart = remaining * 80
-        totalCost = firstPart + secondPart;
+        var TenToTwentyDays = remaining * 80
+        totalCost = firstTenDays + TenToTwentyDays;
     }
     else {
         numberOfDays = Math.round(numberOfDays);
-        var firstPart = 10 * 100;
-        var secondPart = 10 * 80;
+        var firstTenDays = 10 * 100;
+        var TenToTwentyDays = 10 * 80;
         var remaining = numberOfDays - 20;
-        var thirdPart = remaining * 50;
-        totalCost = firstPart + secondPart + thirdPart
+        var moreThanTwenty = remaining * 50;
+        totalCost = firstTenDays + TenToTwentyDays + moreThanTwenty
     }
     return totalCost;
 }
