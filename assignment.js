@@ -1,3 +1,5 @@
+// Github link: https://github.com/TahmidCh/JS-assignment
+
 // First Part of Assignment
 
 function kilometerToMeter(inputDistance) {
